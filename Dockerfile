@@ -1,4 +1,4 @@
-FROM sagemath/sagemath:8.0
+FROM sagemath/sagemath:9.6
 
 # Inspired from https://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile
 
@@ -7,10 +7,7 @@ ENV HOME /home/sage
 
 # Upgrade to jupyter 5.* as required by mybinder and install additional kernels
 # This will eventually be lifted upstream to sagemath/sagemath
-RUN sage -pip install "notebook>=5" "ipykernel>=4.6"
-RUN sage -i gap_jupyter
-RUN sage -i singular_jupyter
-RUN sage -i pari_jupyter
+# RUN sage -pip install "notebook>=5" "ipykernel>=4.6"
 
 USER root
 # This will eventually be lifted upstream to sagemath/sagemath
