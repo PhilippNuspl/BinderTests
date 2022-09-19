@@ -1,4 +1,4 @@
-FROM sagemath/sagemath:9.6
+FROM sagemath/sagemath:9.5
 
 # Inspired from https://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile
 
