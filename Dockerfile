@@ -12,6 +12,6 @@ ENV HOME /home/sage
 USER root
 
 # Make sure the contents of our repo are in ${HOME}
-COPY . ${HOME}
-RUN chown -R ${NB_USER}:${NB_USER} ${HOME}
+# COPY . ${HOME}
+COPY --chown=sage:sage . ${HOME}
 USER ${NB_USER}
