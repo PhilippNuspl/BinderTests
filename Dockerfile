@@ -10,8 +10,6 @@ ENV HOME /home/sage
 # RUN sage -pip install "notebook>=5" "ipykernel>=4.6"
 
 USER root
-# This will eventually be lifted upstream to sagemath/sagemath
-COPY jupyter jupyter-notebook /usr/bin/
 
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
