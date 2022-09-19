@@ -1,3 +1,5 @@
-FROM sagemath/sagemath:9.5
+FROM sagemath/sagemath
+
+RUN sage -pip install jupyterlab
 
 COPY --chown=sage:sage . ${HOME}
