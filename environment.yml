@@ -7,5 +7,4 @@ dependencies:
   - jupyterlab
   - ipywidgets
   - sage=9.5
-  run:
-    - sage pip -i git+https://github.com/PhilippNuspl/rec_sequences.git
+  - sage pip -i git+https://github.com/PhilippNuspl/rec_sequences.git
